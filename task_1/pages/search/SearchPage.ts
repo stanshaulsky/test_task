@@ -37,4 +37,5 @@ export class SearchPage{
         await this.page.locator(LOCATORS.searchInput).fill(subject);
         await this.page.locator(LOCATORS.searchBtn).click();
     }
+
 }
