@@ -1,0 +1,26 @@
+{
+  "name": "playwright_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "chromium_only": "npx playwright test --config ./playwright.config.ts --project=chromium",
+    "chromium_only_debug": "npx playwright test --config ./playwright.config.ts --project=chromium --debug",
+    "webkit_only_debug": "npx playwright test --config ./playwright.config.ts --project=webkit --debug",
+    "firefox_only": "npx playwright test --config ./playwright.config.ts --project=firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanshaulsky/playwright_task.git"
+  },
+  "author": "Stan Shaulsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanshaulsky/playwright_task/issues"
+  },
+  "homepage": "https://github.com/stanshaulsky/playwright_task#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4"
+  }
+}
